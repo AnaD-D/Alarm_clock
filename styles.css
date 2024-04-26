@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    min-height: 100vh;
+    background: #64b5f6;
+}
+
+body, .wrapper, .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 440px;
+    background-color: #fff;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px 30px 38px;
+}
+
+.wrapper img {
+    max-width: 103px;
+}
+
+.wrapper h1{
+    font-size: 2.3em;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.wrapper .content {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.wrapper .content.disable {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.content .column {
+    border: 1px solid #999;
+    padding: 0 10px;
+    border-radius: 5px;
+    width: calc(100% / 3 - 30px);
+}
+
+.column select {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    height: 53px;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+.wrapper button {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.3em;
+    padding: 17px 0;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #64b5f6;
+    font-weight: 500;
+}
+
+.wrapper button:hover {
+    background-color: #64b5f6;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 500;
+}
